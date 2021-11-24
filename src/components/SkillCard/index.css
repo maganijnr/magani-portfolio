@@ -1,0 +1,21 @@
+@import '../../index.css';
+
+.skill_card{
+  color: #ff4500;
+  background: var(--default-white);
+  min-width: 250px;
+  max-width: 250px;
+  height: 150px;
+  max-height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  margin: 1rem;
+}
+
+.skill_card h2{
+  color: var(--main-blue);
+  font-size: 24px;
+}

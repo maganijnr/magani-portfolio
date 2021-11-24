@@ -1,0 +1,141 @@
+@import '../../index.css';
+
+.hero_container{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.hero_video_wrapper{
+  position: absolute;
+  top:0;
+  left: 0;
+  right: 0;
+  bottom:0;
+  overflow:hidden;
+  width:100%;
+  height:100%;
+  z-index:2;
+}
+
+.hero_video_wrapper::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: var(--main-blue-variant);
+}
+
+.hero_video{
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.hero_info_wrapper{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  text-align: center;
+  width: 400px;
+}
+
+.hero_info_wrapper h2{
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.hero_info_wrapper p{
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--main-orange);
+}
+
+@media screen and (min-width: 1200px){
+  .hero_info_wrapper{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    z-index: 3;
+    text-align: center;
+    width: 900px;
+  }
+  .hero_info_wrapper h2{
+    font-size: 80px;
+    font-weight: 700;
+  }
+  .hero_info_wrapper p{
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--main-orange);
+  }
+}
+
+
+@media screen and (max-width: 768px){
+  .hero_info_wrapper{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    z-index: 3;
+    text-align: center;
+    width: 600px;
+  }
+  .hero_info_wrapper h2{
+    font-size: 60px;
+    font-weight: 700;
+  }
+  .hero_info_wrapper p{
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--main-orange);
+  }
+}
+
+@media screen and (max-width: 480px){
+  .hero_info_wrapper{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    z-index: 3;
+    text-align: center;
+    max-width: 350px;
+  }
+  .hero_info_wrapper h2{
+    font-size: 35px;
+    font-weight: 700;
+  }
+  .hero_info_wrapper p{
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--main-orange);
+  }
+}
+
+
+@media screen and (max-width: 376px){
+  .hero_info_wrapper{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    z-index: 3;
+    text-align: center;
+    max-width: 300px;
+  }
+  .hero_info_wrapper h2{
+    font-size: 30px;
+    font-weight: 700;
+  }
+  .hero_info_wrapper p{
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--main-orange);
+  }
+}

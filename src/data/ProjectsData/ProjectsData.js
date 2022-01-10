@@ -1,5 +1,6 @@
 import BollaImage from '../../images/bolla.png'
 import GeekImage from '../../images/Geek.png'
+import FleetImage from '../../images/Fleet.png'
 export const projects = [
   {
     id:1, 
@@ -16,5 +17,13 @@ export const projects = [
     projectStack:"ReactJs, Redux, Styled Component & The Movie Database API",
     projectLink:"https://geek-watch.netlify.app/",
     projectImg: GeekImage
+  },
+  {
+    id:3, 
+    projectTitle:"Fleet", 
+    projectDesc:"An image sharing app.",
+    projectStack:"ReactJs, Tailwind Css, Sanity.io",
+    projectLink:"https://fleet-image-sharing-app.netlify.app/",
+    projectImg: FleetImage
   },
 ]

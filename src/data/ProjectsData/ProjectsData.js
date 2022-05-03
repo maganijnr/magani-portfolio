@@ -1,6 +1,7 @@
 import BollaImage from '../../images/bolla.png'
 import GeekImage from '../../images/Geek.png'
 import FleetImage from '../../images/Fleet.png'
+import NPro from '../../images/NPro.png'
 export const projects = [
   {
     id:1, 
@@ -26,4 +27,12 @@ export const projects = [
     projectLink:"https://fleet-image-sharing-app.netlify.app/",
     projectImg: FleetImage
   },
+  {
+    id:4,
+    projectTitle:"N-Pro",
+    projectDesc:"A netflix clone web application.",
+    projectStack:"NextJs, Typescript, Tailwind Css, Firebase, Vercel & The Movie Database API",
+    projectLink:"https://n-pro.vercel.app/",
+    projectImg: NPro
+  }
 ]
